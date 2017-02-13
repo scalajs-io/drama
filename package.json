@@ -1,0 +1,9 @@
+{
+  "name": "drama-scalajs",
+  "version": "0.1.3",
+  "private": true,
+  "dependencies": {
+    "drama": "^0.1.3",
+    "source-map": "^0.5.6"
+  }
+}
