@@ -1,6 +1,6 @@
 {
   "name": "drama-sjs",
-  "version": "0.1.3",
+  "version": "0.1.3-2",
   "private": true,
   "dependencies": {
     "drama": "^0.1.3",

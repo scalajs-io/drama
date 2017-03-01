@@ -8,7 +8,6 @@ Actor model implementation for JavaScript and Node.js (work in progress)
 
 ### Build Dependencies
 
-* [ScalaJs.io v0.3.x](https://github.com/scalajs-io/scalajs.io)
 * [SBT v0.13.13](http://www.scala-sbt.org/download.html)
 
 ### Build/publish the SDK locally
@@ -62,7 +61,7 @@ class GreetingActor() extends js.Object {
 To add the `Drama` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "drama" % "0.1.3"
+libraryDependencies += "io.scalajs.npm" %%% "drama" % "0.1.3-2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
