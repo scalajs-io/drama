@@ -5,7 +5,7 @@ import sbt._
 
 import scala.language.postfixOps
 
-val scalaJsIOVersion = "0.4.0-pre2"
+val scalaJsIOVersion = "0.4.0-pre3"
 val apiVersion = scalaJsIOVersion
 val scalaJsVersion = "2.12.1"
 
@@ -44,7 +44,7 @@ lazy val publishingSettings = Seq(
       Some("releases" at nexus + "service/local/staging/deploy/maven2")
   },
   pomExtra :=
-    <url>https://github.com/ldaniels528/scalajs-node-npm</url>
+    <url>https://github.com/scalajs-io/drama</url>
       <licenses>
         <license>
           <name>MIT License</name>
