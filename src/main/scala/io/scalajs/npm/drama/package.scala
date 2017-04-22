@@ -2,7 +2,7 @@ package io.scalajs.npm
 
 import io.scalajs.util.PromiseHelper._
 
-import scala.concurrent.Promise
+import scala.concurrent.Future
 import scala.scalajs.js
 import scala.scalajs.js.Any
 
@@ -31,7 +31,7 @@ package object drama {
       * @return the promise of the state
       */
     @inline
-    def ?(method: String): Promise[Any] = askFuture(method)
+    def ?(method: String): Future[Any] = askFuture(method)
 
     /**
       * Requests state of the given method the specified actor
@@ -39,7 +39,7 @@ package object drama {
       * @return the promise of the state
       */
     @inline
-    def askFuture(method: String): Promise[Any] = promiseCallback1[js.Any](actor.ask(actor, method, _))
+    def askFuture(method: String): Future[Any] = promiseCallback1[js.Any](actor.ask(actor, method, _))
 
   }
 
