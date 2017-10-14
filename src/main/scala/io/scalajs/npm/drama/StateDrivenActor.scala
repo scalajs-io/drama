@@ -3,13 +3,13 @@ package io.scalajs.npm.drama
 import StateDrivenActor.ReplyScope
 
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
+
 
 /**
   * State-driven Actor
   * @author lawrence.daniels@gmail.com
   */
-@ScalaJSDefined
+
 class StateDrivenActor[T](initialState: T) extends js.Object {
   private var state = initialState
 

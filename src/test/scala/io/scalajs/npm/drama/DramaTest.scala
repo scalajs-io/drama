@@ -7,7 +7,7 @@ import org.scalatest.FunSpec
 
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
+
 
 /**
   * Drama Tests
@@ -56,7 +56,7 @@ object DramaTest {
     * Greeting Actor
     * @author lawrence.daniels@gmail.com
     */
-  @ScalaJSDefined
+
   class GreetingActor() extends js.Object {
 
     def sayHello(message: String): Unit = console.log(s"Received: '$message'")
@@ -67,7 +67,7 @@ object DramaTest {
     * Stateful Actor
     * @author lawrence.daniels@gmail.com
     */
-  @ScalaJSDefined
+
   class StatefulActor(initialState: js.Any) extends StateDrivenActor(initialState)
 
 }

@@ -35,7 +35,7 @@ $ sbt test
 ```scala
 import io.scalajs.npm.drama._
 import scala.scalajs.js
-import scala.scalajs.js.annotation.ScalaJSDefined
+
 
 val actorSystem = Drama("sys")
 
@@ -48,7 +48,7 @@ actor ! "sayHello" -> "Buenos dias"
   * Greeting Actor
   * @author lawrence.daniels@gmail.com
   */
-@ScalaJSDefined
+
 class GreetingActor() extends js.Object {
 
   def sayHello(message: String): Unit = println("Received: %s", message)
@@ -61,7 +61,7 @@ class GreetingActor() extends js.Object {
 To add the `Drama` binding to your project, add the following to your build.sbt:  
 
 ```sbt
-libraryDependencies += "io.scalajs.npm" %%% "drama" % "0.4.1"
+libraryDependencies += "io.scalajs.npm" %%% "drama" % "0.4.2"
 ```
 
 Optionally, you may add the Sonatype Repository resolver:
