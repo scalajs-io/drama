@@ -8,7 +8,6 @@ import org.scalatest.FunSpec
 import scala.scalajs.concurrent.JSExecutionContext.Implicits.queue
 import scala.scalajs.js
 
-
 /**
   * Drama Tests
   * @author lawrence.daniels@gmail.com

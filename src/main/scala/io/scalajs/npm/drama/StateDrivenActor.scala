@@ -4,7 +4,6 @@ import StateDrivenActor.ReplyScope
 
 import scala.scalajs.js
 
-
 /**
   * State-driven Actor
   * @author lawrence.daniels@gmail.com
